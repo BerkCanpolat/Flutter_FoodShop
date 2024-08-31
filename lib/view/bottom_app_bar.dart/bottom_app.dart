@@ -10,7 +10,7 @@ class BottomApp extends StatefulWidget {
 class _BottomAppState extends State<BottomApp> {
   int myCurrentIndex = 0;
 
-  var changePage = [Home(), Center(child: Container(child: Text('İKİNCİ SAYFA'))), Container(), Container()];
+  var changePage = [Home(), Gecici(), Container(), Container()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

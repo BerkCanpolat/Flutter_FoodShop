@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_foodshop/view/constant/colors/colors_app.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeCubit extends Cubit<ThemeData> {
@@ -9,26 +11,52 @@ class ThemeCubit extends Cubit<ThemeData> {
 
   static final _lightTheme = ThemeData(
     brightness: Brightness.light,
-    primaryColor: Colors.black,
-    scaffoldBackgroundColor: Colors.white,
+    primaryColor: AppColorTheme.primaryColorBlack,
+    scaffoldBackgroundColor: AppColorTheme.scaffoldBGWhite,
+    //Bottom Navigation Bar Theme
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
       elevation: 0.0,
       unselectedIconTheme: IconThemeData(
-        color: Colors.black,
+        color: AppColorTheme.lightIconUnselectedColor,
         size: 28
       ),
       selectedIconTheme: IconThemeData(
-        color: Colors.orange,
+        color: AppColorTheme.lightIconSelectedColor,
         size: 28
       )
+    ),
+    //App Bar Theme
+    appBarTheme: const AppBarTheme(
+      elevation: 0.0,
+      backgroundColor: AppColorTheme.lightAppBarBG,
+      systemOverlayStyle: SystemUiOverlayStyle.dark,
     ),
   );
 
   static final _darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: Colors.white,
-    scaffoldBackgroundColor: Colors.black
+    scaffoldBackgroundColor: const Color(0xFF151415),
+    //Bottom Navigation Bar Theme
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      type: BottomNavigationBarType.fixed,
+      elevation: 0.0,
+      unselectedIconTheme: IconThemeData(
+        color: AppColorTheme.darkIconUnselectedColor,
+        size: 28
+      ),
+      selectedIconTheme: IconThemeData(
+        color: AppColorTheme.darkIconSelectedColor,
+        size: 28
+      ),
+    ),
+    //App Bar Theme
+    appBarTheme: const AppBarTheme(
+      elevation: 0.0,
+      backgroundColor: AppColorTheme.darkAppBarBG,
+      systemOverlayStyle: SystemUiOverlayStyle.light,
+    ),
   );
 
   Future<void> toggleTheme() async {
