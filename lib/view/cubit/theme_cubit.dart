@@ -10,6 +10,7 @@ class ThemeCubit extends Cubit<ThemeData> {
     scaffoldBackgroundColor: Colors.white,
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
+      elevation: 0.0,
       unselectedIconTheme: IconThemeData(
         color: Colors.black,
         size: 28
