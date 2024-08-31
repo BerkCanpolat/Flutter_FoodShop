@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => ThemeCubit()),
         BlocProvider(create: (context) => BottomNavigationbarCubit())
     ], 
-    child: ThemeSwitcher()
+    child: const ThemeSwitcher()
     );
   }
 }
