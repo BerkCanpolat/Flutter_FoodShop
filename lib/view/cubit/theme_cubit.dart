@@ -24,7 +24,7 @@ class ThemeCubit extends Cubit<ThemeData> {
       selectedIconTheme: IconThemeData(
         color: AppColorTheme.lightIconSelectedColor,
         size: 28
-      )
+      ),
     ),
     //App Bar Theme
     appBarTheme: const AppBarTheme(
@@ -33,12 +33,12 @@ class ThemeCubit extends Cubit<ThemeData> {
       systemOverlayStyle: SystemUiOverlayStyle.dark,
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: Colors.black,
-      foregroundColor: Colors.white,
+      backgroundColor: AppColorTheme.lightFloatBG,
+      foregroundColor: AppColorTheme.lightForeignC,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(50)
       ),
-      
+
     ),
   );
 
@@ -66,8 +66,8 @@ class ThemeCubit extends Cubit<ThemeData> {
       systemOverlayStyle: SystemUiOverlayStyle.light,
     ),
         floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: Colors.white,
-      foregroundColor: Colors.black,
+      backgroundColor: AppColorTheme.darkFloatBG,
+      foregroundColor: AppColorTheme.darkForeignC,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(50)
       ),

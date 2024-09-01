@@ -1,0 +1,9 @@
+{
+    "appbarWelcome" : "Welcome",
+    "sliderCardProductPriceOne" : "$4.99",
+    "sliderCardProductPriceTwo" : "$12.99",
+    "sliderCardProductPriceThree" : "$15.99",
+    "sliderCardProductPriceFour" : "$3.99",
+    "sliderCardProductPriceFive" : "$6.99",
+    "sliderCardButtonName" : "Buy Now"
+}

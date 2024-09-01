@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_foodshop/data/entity/slidercard_model.dart';
 import 'package:flutter_foodshop/products/appbar_circle/appbar_circle.dart';
+import 'package:flutter_foodshop/products/extension/localize_extension.dart';
 import 'package:flutter_foodshop/products/home_state.dart/home_state.dart';
 import 'package:flutter_foodshop/view/cubit/slidercard_cubit.dart';
 

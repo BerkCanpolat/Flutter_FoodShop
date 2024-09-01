@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 final class SlidercardModel {
   final String img;
   final String price;
@@ -9,9 +11,9 @@ final class SlidercardModel {
   class SliderCardItems {
     late final List<SlidercardModel> cardItems;
 
-    SliderCardItems() {
+    SliderCardItems(BuildContext context) {
       cardItems = [
-        SlidercardModel(img: 'assets/cola.png', price: '9.99', name: 'Coca Cola'),
+        SlidercardModel(img: 'assets/cola.png', price: "3.99", name: 'Coca Cola'),
         SlidercardModel(img: 'assets/burger.png', price: '20.30', name: 'Hamburger'),
         SlidercardModel(img: 'assets/pizza.png', price: '5.95', name: 'Pizza'),
         SlidercardModel(img: 'assets/donut.png', price: '2.99', name: 'Donut'),

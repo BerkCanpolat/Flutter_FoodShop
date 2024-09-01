@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_foodshop/products/extension/localize_extension.dart';
 import 'package:flutter_foodshop/view/constant/image/app_bar_image.dart';
 
 class AppBarCirclePadding extends StatelessWidget {
@@ -20,7 +21,7 @@ class AppBarCirclePadding extends StatelessWidget {
           const Icon(Icons.waving_hand_sharp, color: Colors.orangeAccent, size: 17,),
           Text.rich(
             TextSpan(
-              text: ' Hoşgeldin', style: Theme.of(context).textTheme.titleSmall?.copyWith(
+              text: ' ${context.appWelcome}', style: Theme.of(context).textTheme.titleSmall?.copyWith(
                 fontWeight: FontWeight.bold
               ),
               children: <TextSpan>[

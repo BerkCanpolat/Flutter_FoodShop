@@ -72,7 +72,7 @@ class _SliderCardHomeBloc extends StatelessWidget {
                                 child: TextButton(
                                   onPressed: (){}, 
                                   child: Text(
-                                    'Satın Al', style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                                    context.sliderButton, style: Theme.of(context).textTheme.titleSmall?.copyWith(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold
                                     ),

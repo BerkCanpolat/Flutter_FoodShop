@@ -8,9 +8,8 @@ class BottomApp extends StatefulWidget {
 }
 
 class _BottomAppState extends State<BottomApp> {
-  int myCurrentIndex = 0;
 
-  var changePage = [Home(), Gecici(), Container(), Container()];
+  var changePage = [Home(), Gecici(), Gecicilocal(), Container()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -11,6 +11,10 @@ final class AppColorTheme extends Color {
   static const lightIconUnselectedColor = Colors.black;
   static const lightIconSelectedColor = Colors.orange;
 
+  //Theme Floatingactionbutton Light
+  static const lightFloatBG = Colors.black;
+  static const lightForeignC = Colors.white;
+
   //Theme AppBar Ligh
   static const lightAppBarBG = Colors.white;
 
@@ -24,5 +28,9 @@ final class AppColorTheme extends Color {
 
   //Theme AppBar Dark
   static const darkAppBarBG = Color(0xFF151415);
+
+  //Theme Floatingactionbutton Dark
+  static const darkFloatBG = Colors.white;
+  static const darkForeignC = Colors.black;
   
 }

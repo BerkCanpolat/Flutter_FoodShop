@@ -36,7 +36,7 @@ abstract class HomeState extends State<Home> with TickerProviderStateMixin {
     // TODO: implement initState
     super.initState();
     myCardInfiniteSlider();
-    cardModel = SliderCardItems().cardItems;
+    cardModel = SliderCardItems(context).cardItems;
   }
 
   @override
