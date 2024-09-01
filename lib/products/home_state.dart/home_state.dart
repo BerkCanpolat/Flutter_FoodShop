@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_foodshop/data/entity/slidercard_model.dart';
+import 'package:flutter_foodshop/view/cubit/home_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/slidercard_cubit.dart';
 import 'package:flutter_foodshop/view/screens/home.dart';
 
@@ -37,6 +38,7 @@ abstract class HomeState extends State<Home> with TickerProviderStateMixin {
     super.initState();
     myCardInfiniteSlider();
     cardModel = SliderCardItems(context).cardItems;
+    context.read<HomeCubit>().getFoods();
   }
 
   @override

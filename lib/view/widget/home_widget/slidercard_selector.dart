@@ -17,14 +17,16 @@ class _SliderCardSelectorState extends State<_SliderCardSelector> with TickerPro
   Widget build(BuildContext context) {
     return BlocBuilder<SlidercardCubit, int>(
       builder: (context, state) {
-        return TabPageSelector(
-          color: Colors.white,
-          selectedColor: Colors.orange,
-          indicatorSize: 9,
-        controller: TabController(length: widget.cardModel.length, vsync: this, 
-        initialIndex: state % widget.cardModel.length
-        ),
-      );
+        return Center(
+          child: TabPageSelector(
+            color: Colors.white,
+            selectedColor: Colors.orange,
+            indicatorSize: 9,
+          controller: TabController(length: widget.cardModel.length, vsync: this, 
+          initialIndex: state % widget.cardModel.length
+          ),
+                ),
+        );
       } 
     );
   }

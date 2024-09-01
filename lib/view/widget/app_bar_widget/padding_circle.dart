@@ -7,6 +7,8 @@ class AppBarCirclePadding extends StatelessWidget {
     super.key,
   });
 
+  final String _name = ' Berk!';
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -25,7 +27,7 @@ class AppBarCirclePadding extends StatelessWidget {
                 fontWeight: FontWeight.bold
               ),
               children: <TextSpan>[
-                TextSpan(text: ' Berk!', style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                TextSpan(text: '$_name', style: Theme.of(context).textTheme.titleSmall?.copyWith(
                   fontWeight: FontWeight.normal,
                   color: Colors.grey
                 ))

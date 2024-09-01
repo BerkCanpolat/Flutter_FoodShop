@@ -38,7 +38,9 @@ class ThemeCubit extends Cubit<ThemeData> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(50)
       ),
-
+    ),
+    cardTheme: CardTheme(
+      color: Colors.white
     ),
   );
 
@@ -71,6 +73,9 @@ class ThemeCubit extends Cubit<ThemeData> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(50)
       ),
+    ),
+    cardTheme: CardTheme(
+      color: Colors.grey[900],
     ),
   );
 
