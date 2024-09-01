@@ -14,12 +14,15 @@ class _BottomAppState extends State<BottomApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: BlocBuilder<BottomNavigationbarCubit,int>(
         builder: (context, state) {
           return changePage[state];
         },
         ),
-      bottomNavigationBar: const _MainBottomNav()
+      bottomNavigationBar: const _MainBottomNav(),
+      floatingActionButton: FloatingActionButton(onPressed: (){}, child: Icon(Icons.add),),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

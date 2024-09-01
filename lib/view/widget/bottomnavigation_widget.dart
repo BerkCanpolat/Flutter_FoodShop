@@ -16,16 +16,16 @@ class _MainBottomNav extends StatelessWidget {
     return BlocBuilder<BottomNavigationbarCubit,int>(
       builder: (context, state) {
         return BottomNavigationBar(items: const [
-      BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: ''),
-      BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: ''),
-      BottomNavigationBarItem(icon: Icon(Icons.location_on_outlined), label: ''),
-      BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: ''),
-    ],
-    currentIndex: state,
-    onTap: (value) {
-      context.read<BottomNavigationbarCubit>().changeTabIndex(value);
-    },
-    );
+              BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: ''),
+              BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: ''),
+              BottomNavigationBarItem(icon: Icon(Icons.location_on_outlined), label: ''),
+              BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: ''),
+            ],
+            currentIndex: state,
+            onTap: (value) {
+              context.read<BottomNavigationbarCubit>().changeTabIndex(value);
+            },
+            );
       },
     );
   }

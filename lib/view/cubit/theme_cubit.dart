@@ -32,6 +32,14 @@ class ThemeCubit extends Cubit<ThemeData> {
       backgroundColor: AppColorTheme.lightAppBarBG,
       systemOverlayStyle: SystemUiOverlayStyle.dark,
     ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.black,
+      foregroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(50)
+      ),
+      
+    ),
   );
 
   static final _darkTheme = ThemeData(
@@ -56,6 +64,13 @@ class ThemeCubit extends Cubit<ThemeData> {
       elevation: 0.0,
       backgroundColor: AppColorTheme.darkAppBarBG,
       systemOverlayStyle: SystemUiOverlayStyle.light,
+    ),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.white,
+      foregroundColor: Colors.black,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(50)
+      ),
     ),
   );
 
