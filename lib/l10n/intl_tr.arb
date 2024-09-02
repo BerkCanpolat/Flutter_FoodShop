@@ -7,5 +7,11 @@
     "sliderCardProductPriceFive" : "360.99 ₺",
     "sliderCardButtonName" : "Satın Al",
     "allFoodsCategoryText" : "Tüm Yemekler",
-    "homeFoodsFreeShipping" : "Ücretsiz Gönderim"
+    "homeFoodsFreeShipping" : "Ücretsiz Gönderim",
+    "descriptionDetails" : "Açıklama",
+    "descriptionDetailsSubTitle" : "Yemeklerimiz son derece lezzetlidir. Teslimat ücretsizdir! Bu eşsiz yemeği tatmanızı şiddetle tavsiye ederiz. Kullanılan ürünler son derece temiz ve hijyeniktir. Bol yemek için bol sipariş verin!",
+    "detailsPriceText" : "Fiyat",
+    "detailsPrice" : "8.45",
+    "detailsReviews" : "İnceleme",
+    "detailsButton" : "Şimdi Al"
 }

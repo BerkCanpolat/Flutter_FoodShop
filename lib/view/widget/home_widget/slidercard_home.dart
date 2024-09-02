@@ -31,7 +31,6 @@ class _SliderCardHomeBloc extends StatelessWidget {
                 clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  //color: Colors.grey[50]
                   color: Theme.of(context).cardColor
                 ),
                 child: Column(

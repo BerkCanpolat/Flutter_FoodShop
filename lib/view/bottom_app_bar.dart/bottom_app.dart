@@ -9,7 +9,7 @@ class BottomApp extends StatefulWidget {
 
 class _BottomAppState extends State<BottomApp> {
 
-  var changePage = [Home(), Gecici(), Gecicilocal(), Container()];
+  var changePage = [Home(), FavoritePage(), Gecicilocal(), Container()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

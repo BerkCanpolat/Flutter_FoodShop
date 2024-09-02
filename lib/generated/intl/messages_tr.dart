@@ -25,6 +25,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "allFoodsCategoryText":
             MessageLookupByLibrary.simpleMessage("Tüm Yemekler"),
         "appbarWelcome": MessageLookupByLibrary.simpleMessage("Hoşgeldin"),
+        "descriptionDetails": MessageLookupByLibrary.simpleMessage("Açıklama"),
+        "descriptionDetailsSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Yemeklerimiz son derece lezzetlidir. Teslimat ücretsizdir! Bu eşsiz yemeği tatmanızı şiddetle tavsiye ederiz. Kullanılan ürünler son derece temiz ve hijyeniktir. Bol yemek için bol sipariş verin!"),
+        "detailsButton": MessageLookupByLibrary.simpleMessage("Şimdi Al"),
+        "detailsPrice": MessageLookupByLibrary.simpleMessage("8.45"),
+        "detailsPriceText": MessageLookupByLibrary.simpleMessage("Fiyat"),
+        "detailsReviews": MessageLookupByLibrary.simpleMessage("İnceleme"),
         "homeFoodsFreeShipping":
             MessageLookupByLibrary.simpleMessage("Ücretsiz Gönderim"),
         "sliderCardButtonName":

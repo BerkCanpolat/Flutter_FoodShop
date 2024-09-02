@@ -7,5 +7,11 @@
     "sliderCardProductPriceFive" : "$6.99",
     "sliderCardButtonName" : "Buy Now",
     "allFoodsCategoryText" : "All Meals",
-    "homeFoodsFreeShipping" : "Free Shipping"
+    "homeFoodsFreeShipping" : "Free Shipping",
+    "descriptionDetails" : "Descripption",
+    "descriptionDetailsSubTitle" : "Our food is extremely delicious. Delivery is free of charge! We strongly recommend you to taste this unique dish. The products used are extremely clean and hygienic. Order plenty for plenty of food!",
+    "detailsPriceText" : "Price",
+    "detailsPrice" : "8.45",
+    "detailsReviews" : "Reviews",
+    "detailsButton" : "Get It now"
 }

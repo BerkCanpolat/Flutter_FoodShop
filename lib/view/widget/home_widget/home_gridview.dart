@@ -28,14 +28,32 @@ class _HomeGridViewWidget extends StatelessWidget with NavigateManager{
           elevation: 0.5,
           child: Column(
             children: [
-             const Padding(
-                padding: EdgeInsets.only(top: 10, bottom: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Icon(Icons.favorite_outline, color: Colors.red,)
-                  ],
-                )
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  BlocBuilder<FavoriteCubit, List<FoodModel>>(
+                    builder: (context, state) {
+                      final isFavorite = context.read<FavoriteCubit>().isFavorite(food);
+                      return IconButton(
+                      icon: Icon(isFavorite ? 
+                      Icons.favorite : 
+                      Icons.favorite_outline,
+                      color: isFavorite ? Colors.red : Colors.grey,
+                      ),
+                      onPressed: (){
+                        final cubit = context.read<FavoriteCubit>();
+                        final isFavorite = cubit.isFavorite(food);
+                        if(isFavorite) {
+                          cubit.removeFromFavorites(food);
+                        } else {
+                          cubit.addToFavorites(food);
+                        }
+                      }, 
+                      padding: EdgeInsets.zero,
+                    );
+                    } 
+                  )
+                ],
               ),
               Image.network('http://kasimadalan.pe.hu/yemekler/resimler/${food.yemek_resim_adi}', height: 100,),
               Padding(

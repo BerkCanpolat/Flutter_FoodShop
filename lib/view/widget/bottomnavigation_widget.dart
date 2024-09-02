@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_foodshop/view/cubit/bottom_navigationbar_cubit.dart';
-import 'package:flutter_foodshop/view/screens/gecici.dart';
+import 'package:flutter_foodshop/view/screens/favorite_page.dart';
 import 'package:flutter_foodshop/view/screens/gecicilocal.dart';
 import 'package:flutter_foodshop/view/screens/home.dart';
 

@@ -139,6 +139,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Descripption`
+  String get descriptionDetails {
+    return Intl.message(
+      'Descripption',
+      name: 'descriptionDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Our food is extremely delicious. Delivery is free of charge! We strongly recommend you to taste this unique dish. The products used are extremely clean and hygienic. Order plenty for plenty of food!`
+  String get descriptionDetailsSubTitle {
+    return Intl.message(
+      'Our food is extremely delicious. Delivery is free of charge! We strongly recommend you to taste this unique dish. The products used are extremely clean and hygienic. Order plenty for plenty of food!',
+      name: 'descriptionDetailsSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Price`
+  String get detailsPriceText {
+    return Intl.message(
+      'Price',
+      name: 'detailsPriceText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `8.45`
+  String get detailsPrice {
+    return Intl.message(
+      '8.45',
+      name: 'detailsPrice',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reviews`
+  String get detailsReviews {
+    return Intl.message(
+      'Reviews',
+      name: 'detailsReviews',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get It now`
+  String get detailsButton {
+    return Intl.message(
+      'Get It now',
+      name: 'detailsButton',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
