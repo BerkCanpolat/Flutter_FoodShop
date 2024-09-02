@@ -13,17 +13,18 @@ class ThemeCubit extends Cubit<ThemeData> {
     brightness: Brightness.light,
     primaryColor: AppColorTheme.primaryColorBlack,
     scaffoldBackgroundColor: AppColorTheme.scaffoldBGWhite,
+    cardColor: Colors.grey[50],
     //Bottom Navigation Bar Theme
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
       elevation: 0.0,
       unselectedIconTheme: IconThemeData(
         color: AppColorTheme.lightIconUnselectedColor,
-        size: 28
+        size: 26
       ),
       selectedIconTheme: IconThemeData(
         color: AppColorTheme.lightIconSelectedColor,
-        size: 28
+        size: 26
       ),
     ),
     //App Bar Theme
@@ -39,14 +40,24 @@ class ThemeCubit extends Cubit<ThemeData> {
         borderRadius: BorderRadius.circular(50)
       ),
     ),
-    cardTheme: CardTheme(
+    cardTheme: const CardTheme(
       color: Colors.white
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Color(0xFFe85d04),
+      )
     ),
   );
 
   static final _darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: Colors.white,
+    cardColor: Color(0xFFfefae0),
+    textTheme: TextTheme(
+      titleLarge: TextStyle(color: Colors.red),
+      titleMedium: TextStyle(color: Colors.white)
+    ),
     scaffoldBackgroundColor: const Color(0xFF151415),
     //Bottom Navigation Bar Theme
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
@@ -54,11 +65,11 @@ class ThemeCubit extends Cubit<ThemeData> {
       elevation: 0.0,
       unselectedIconTheme: IconThemeData(
         color: AppColorTheme.darkIconUnselectedColor,
-        size: 28
+        size: 26
       ),
       selectedIconTheme: IconThemeData(
         color: AppColorTheme.darkIconSelectedColor,
-        size: 28
+        size: 26
       ),
     ),
     //App Bar Theme
@@ -76,6 +87,12 @@ class ThemeCubit extends Cubit<ThemeData> {
     ),
     cardTheme: CardTheme(
       color: Colors.grey[900],
+    ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        //backgroundColor: Colors.blueGrey[900]
+        backgroundColor: Color(0xFF41292C)
+      )
     ),
   );
 

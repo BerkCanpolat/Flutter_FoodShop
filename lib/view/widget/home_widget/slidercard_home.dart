@@ -31,7 +31,8 @@ class _SliderCardHomeBloc extends StatelessWidget {
                 clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color: Colors.grey[50]
+                  //color: Colors.grey[50]
+                  color: Theme.of(context).cardColor
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -60,8 +61,8 @@ class _SliderCardHomeBloc extends StatelessWidget {
                                   child: Center(
                                     child: Text(
                                       '${card.price} ₺', style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                                        //color: Colors.grey[600]
-                                        color: Colors.orange[900]
+                                        color: Colors.orange[900],
+                                        fontWeight: FontWeight.bold
                                       ),
                                       ),
                                   ),

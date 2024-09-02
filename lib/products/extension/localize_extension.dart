@@ -9,4 +9,6 @@ extension LocalEx on BuildContext {
   String get sliderPriceFour => S.of(this).sliderCardProductPriceFour;
   String get sliderPriceFive => S.of(this).sliderCardProductPriceFive;
   String get sliderButton => S.of(this).sliderCardButtonName;
+  String get homeAllCategoryText => S.of(this).allFoodsCategoryText;
+  String get homeFreeShippingText => S.of(this).homeFoodsFreeShipping;
 }

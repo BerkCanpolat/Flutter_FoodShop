@@ -22,7 +22,11 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "allFoodsCategoryText":
+            MessageLookupByLibrary.simpleMessage("Tüm Yemekler"),
         "appbarWelcome": MessageLookupByLibrary.simpleMessage("Hoşgeldin"),
+        "homeFoodsFreeShipping":
+            MessageLookupByLibrary.simpleMessage("Ücretsiz Gönderim"),
         "sliderCardButtonName":
             MessageLookupByLibrary.simpleMessage("Satın Al"),
         "sliderCardProductPriceFive":

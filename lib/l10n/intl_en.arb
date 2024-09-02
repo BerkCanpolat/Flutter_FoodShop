@@ -5,5 +5,7 @@
     "sliderCardProductPriceThree" : "$15.99",
     "sliderCardProductPriceFour" : "$3.99",
     "sliderCardProductPriceFive" : "$6.99",
-    "sliderCardButtonName" : "Buy Now"
+    "sliderCardButtonName" : "Buy Now",
+    "allFoodsCategoryText" : "All Meals",
+    "homeFoodsFreeShipping" : "Free Shipping"
 }

@@ -8,13 +8,6 @@ import 'package:flutter_foodshop/view/cubit/slidercard_cubit.dart';
 import 'package:flutter_foodshop/view/screens/home.dart';
 
 abstract class HomeState extends State<Home> with TickerProviderStateMixin {
-  List<String> resim = [
-    'assets/brk.jpeg',
-    'assets/brk.jpeg',
-    'assets/brk.jpeg',
-    'assets/brk.jpeg',
-    'assets/brk.jpeg',
-  ];
 
   late final List<SlidercardModel> cardModel;
 

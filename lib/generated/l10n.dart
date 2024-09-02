@@ -119,6 +119,26 @@ class S {
       args: [],
     );
   }
+
+  /// `All Meals`
+  String get allFoodsCategoryText {
+    return Intl.message(
+      'All Meals',
+      name: 'allFoodsCategoryText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Free Shipping`
+  String get homeFoodsFreeShipping {
+    return Intl.message(
+      'Free Shipping',
+      name: 'homeFoodsFreeShipping',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
