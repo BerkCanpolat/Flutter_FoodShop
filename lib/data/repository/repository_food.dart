@@ -18,9 +18,14 @@ class RepositoryFood {
 
   //Basket food answer
   List<FoodAddModel> foodAddParse(String answer) {
+   if (answer.isEmpty || answer.trim() == "") {
+      return [];
+    }
+
     return FoodAddAnswerModel.fromJson(json.decode(answer)).foodAdd;
   }
 
+  //Home Page Foods
   Future<List<FoodModel>?> fetchFoods() async {
     try {
       var response =
@@ -68,6 +73,22 @@ class RepositoryFood {
         return null;
       }
     }
+
+    Future<void> deleteFoodApi(String kullanici_adi, int sepet_yemek_id) async{
+      try {
+        var url = "http://kasimadalan.pe.hu/yemekler/sepettenYemekSil.php";
+      var veri = {"kullanici_adi":kullanici_adi,"sepet_yemek_id":sepet_yemek_id};
+        var cevap = await _dio.post(url, data: FormData.fromMap(veri));
+      }on DioException catch (e) {
+        _ShowDebug.showDioError(e);
+      }
+    }
+
+      /* Future<void> clearCartApi(List<FoodAddModel> foodList, String kullanici_adi) async {
+    for (var food in foodList) {
+      await deleteFoodApi(kullanici_adi, food.sepet_yemek_id);
+    }
+  } */
   
 }
 

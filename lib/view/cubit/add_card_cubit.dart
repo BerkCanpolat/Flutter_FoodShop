@@ -10,6 +10,11 @@ class AddCardCubit extends Cubit<List<FoodAddModel>> {
   Future<void> foodGetCubit(String kullanici_adi) async {
     var list = await repoFood.foodGetApi(kullanici_adi);
 
+  /*   if (list == null || list.isEmpty) {
+    emit([]);
+    return;
+  } */
+
     var groupedFood = <String, FoodAddModel>{};
 
     for (var food in list ?? []) {
@@ -22,6 +27,16 @@ class AddCardCubit extends Cubit<List<FoodAddModel>> {
 
     emit(groupedFood.values.toList());
   }
+
+  Future<void> deleteFoodCubit(String kullanici_adi, int sepet_yemek_id) async {
+    await repoFood.deleteFoodApi(kullanici_adi, sepet_yemek_id);
+    await foodGetCubit(kullanici_adi);
+  }
+
+  /*   Future<void> clearCart(String kullanici_adi) async {
+    await repoFood.clearCartApi(state, kullanici_adi);
+    emit([]);
+  } */
 
     int calculateTotalPrice(List<FoodAddModel> foodList) {
     int total = 0;

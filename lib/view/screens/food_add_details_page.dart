@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_foodshop/data/entity/food_add_model.dart';
 import 'package:flutter_foodshop/view/cubit/add_card_cubit.dart';
+import 'package:flutter_foodshop/view/cubit/details_cubit.dart';
 import 'package:flutter_foodshop/view/widget/details_widget/details_button.dart';
 
 class FoodAddDetailsPage extends StatefulWidget {
@@ -33,14 +34,28 @@ class _FoodAddDetailsPageState extends State<FoodAddDetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Sepet'),
+      ),
       body: BlocBuilder<AddCardCubit, List<FoodAddModel>>(
         builder: (context, state) {
           int totalPrice = calculateTotalPrice(state);
           if(state.isEmpty) {
-            return Center(child: CircularProgressIndicator(),);
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Henüz Sepete Yemek Eklemedin!', style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                    fontWeight: FontWeight.bold
+                  ),
+                  textAlign: TextAlign.center,
+                  ),
+                Image.asset('assets/empty_basket.gif'),
+              ],
+            );
           }
-          return SizedBox(
+          if(state.isNotEmpty) {
+            return SizedBox(
             height: MediaQuery.of(context).size.height * 0.8,
             child: Column(
               children: [
@@ -86,7 +101,9 @@ class _FoodAddDetailsPageState extends State<FoodAddDetailsPage> {
                               ),
                               const Spacer(),
                               IconButton(
-                                onPressed: (){}, 
+                                onPressed: (){
+                                  context.read<AddCardCubit>().deleteFoodCubit(food.kullanici_adi, food.sepet_yemek_id);
+                                }, 
                                 icon: Icon(Icons.delete_outline, color: Colors.red,)
                               ),
                             ],
@@ -119,6 +136,8 @@ class _FoodAddDetailsPageState extends State<FoodAddDetailsPage> {
               ],
             ),
           );
+          }
+          return Text('Ürün yok');
         },
       ),
     );

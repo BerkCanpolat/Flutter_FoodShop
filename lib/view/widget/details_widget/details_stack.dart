@@ -13,9 +13,23 @@ class DetailsStack extends StatelessWidget {
         children: [
           ...List.generate(5, (index) {
           return Positioned(
-            left: index * 29.0,  // index ile kaydırmayı sağlıyoruz
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/brk.jpeg'),
+            left: index * 29.0,
+            bottom: 54,
+            child: Container(
+              padding: EdgeInsets.zero,
+              margin: EdgeInsets.zero,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.white,
+                  width: 3
+                )
+              ),
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/stack_avatar.png'),
+                backgroundColor: Colors.orange[100],
+                
+              ),
             ),
           );
         }

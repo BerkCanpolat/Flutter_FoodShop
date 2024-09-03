@@ -25,7 +25,17 @@ class FavoritePage extends StatelessWidget {
       body: BlocBuilder<FavoriteCubit, List<FoodModel>>(
         builder: (context, favorites) {
           if (favorites.isEmpty) {
-            return const Center(child: Text('Henüz favori ürün yok.'));
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Henüz Favori Yemeğin yok!', style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                    fontWeight: FontWeight.bold
+                  ),
+                  ),
+                Image.asset('assets/fav.gif'),
+              ],
+            );
           }
           return ListView.builder(
             itemCount: favorites.length,

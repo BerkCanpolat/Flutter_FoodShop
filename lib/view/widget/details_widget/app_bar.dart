@@ -9,6 +9,7 @@ class DetailsAppBar extends StatelessWidget implements PreferredSizeWidget{
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      title: Text('Details'),
       actions: [
         AppBarIconButton(onPressed: (){}, icon: Icons.shopping_bag_outlined),
         AppBarIconButton(onPressed: (){}, icon: Icons.more_vert),
