@@ -12,6 +12,7 @@ class FavoritePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('Favori Sayfam'),
         actions: [
           IconButton(
             onPressed: () => context.read<ThemeCubit>().toggleTheme(),
