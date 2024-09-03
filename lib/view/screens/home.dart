@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_foodshop/data/entity/food_add_model.dart';
 import 'package:flutter_foodshop/data/entity/food_model.dart';
 import 'package:flutter_foodshop/data/entity/slidercard_model.dart';
 import 'package:flutter_foodshop/products/appbar_circle/appbar_circle.dart';

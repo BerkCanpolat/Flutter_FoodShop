@@ -16,7 +16,7 @@ class HomeAppBarCircle extends StatelessWidget implements PreferredSizeWidget{
       leadingWidth: MediaQuery.of(context).size.width / 1,
       actions: [
         AppBarIconButton(onPressed: (){
-          Navigator.of(context).push(MaterialPageRoute(builder: (context) => FoodAddDetailsPage()));
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => const FoodAddDetailsPage()));
         },icon: Icons.shopping_bag_outlined,),
         AppBarIconButton(onPressed: (){},icon: Icons.more_vert_outlined,),
       ],

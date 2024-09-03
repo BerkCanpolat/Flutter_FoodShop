@@ -22,4 +22,14 @@ class AddCardCubit extends Cubit<List<FoodAddModel>> {
 
     emit(groupedFood.values.toList());
   }
+
+    int calculateTotalPrice(List<FoodAddModel> foodList) {
+    int total = 0;
+    for (var food in foodList) {
+      var price = food.yemek_fiyat;
+      var quantity = food.yemek_siparis_adet;
+      total += price * quantity;
+    }
+    return total;
+  }
 }

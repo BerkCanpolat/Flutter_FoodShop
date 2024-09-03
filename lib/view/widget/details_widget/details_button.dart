@@ -21,9 +21,6 @@ class DetailsButton extends StatelessWidget {
           ),
           ),
         icon: Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 20,),
-        style: ElevatedButton.styleFrom(
-          //backgroundColor: Color(0xFFe85d04),
-        ),
         ),
     );
   }

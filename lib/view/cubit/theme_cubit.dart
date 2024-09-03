@@ -56,7 +56,9 @@ class ThemeCubit extends Cubit<ThemeData> {
     cardColor: Color(0xFFfefae0),
     textTheme: TextTheme(
       titleLarge: TextStyle(color: Colors.red),
-      titleMedium: TextStyle(color: Colors.white)
+      titleMedium: TextStyle(color: Colors.white),
+      bodyLarge: TextStyle(color: Color(0xFF151415)),
+      bodySmall: TextStyle(color: Color(0xFF41292C))
     ),
     scaffoldBackgroundColor: const Color(0xFF151415),
     //Bottom Navigation Bar Theme
