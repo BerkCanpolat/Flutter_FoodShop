@@ -9,11 +9,15 @@ class ThemeCubit extends Cubit<ThemeData> {
     _loadTheme();
   }
 
+
+
+
+  //Theme Light Main
   static final _lightTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: AppColorTheme.primaryColorBlack,
     scaffoldBackgroundColor: AppColorTheme.scaffoldBGWhite,
-    cardColor: Colors.grey[50],
+    cardColor: AppColorTheme.lightCardColor,
     //Bottom Navigation Bar Theme
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
@@ -33,6 +37,7 @@ class ThemeCubit extends Cubit<ThemeData> {
       backgroundColor: AppColorTheme.lightAppBarBG,
       systemOverlayStyle: SystemUiOverlayStyle.dark,
     ),
+    //FloatingActionButton Theme
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: AppColorTheme.lightFloatBG,
       foregroundColor: AppColorTheme.lightForeignC,
@@ -40,27 +45,48 @@ class ThemeCubit extends Cubit<ThemeData> {
         borderRadius: BorderRadius.circular(50)
       ),
     ),
+    //Card Theme
     cardTheme: const CardTheme(
       color: Colors.white
     ),
+    //ElevatedButton Theme
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Color(0xFFe85d04),
+        backgroundColor: AppColorTheme.lightElevatedBG,
+      ),
+    ),
+    //Dialog Theme
+    dialogTheme: DialogTheme(
+      backgroundColor: AppColorTheme.lightDialogBG,
+      titleTextStyle: const TextStyle(
+        color: AppColorTheme.lightDialogTitle,
+        fontWeight: FontWeight.bold,
+        fontSize: 20
+      ),
+      contentTextStyle: const TextStyle(
+        color: AppColorTheme.lightDialogContent,
+        fontWeight: FontWeight.bold
       )
     ),
   );
 
+
+
+
+
+  //Theme Dark Main
   static final _darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: Colors.white,
-    cardColor: Color(0xFFfefae0),
-    textTheme: TextTheme(
-      titleLarge: TextStyle(color: Colors.red),
-      titleMedium: TextStyle(color: Colors.white),
-      bodyLarge: TextStyle(color: Color(0xFF151415)),
-      bodySmall: TextStyle(color: Color(0xFF41292C))
+    cardColor: AppColorTheme.darkCardColor,
+    //Text Theme
+    textTheme: const TextTheme(
+      titleLarge: TextStyle(color: AppColorTheme.darkTitleLarge),
+      titleMedium: TextStyle(color: AppColorTheme.darkTitleMedium),
+      bodyLarge: TextStyle(color: AppColorTheme.darkTitleBodyLarge),
+      bodySmall: TextStyle(color: AppColorTheme.darkTitleBodySmall)
     ),
-    scaffoldBackgroundColor: const Color(0xFF151415),
+    scaffoldBackgroundColor: AppColorTheme.darkScaffoldBG,
     //Bottom Navigation Bar Theme
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
@@ -80,6 +106,7 @@ class ThemeCubit extends Cubit<ThemeData> {
       backgroundColor: AppColorTheme.darkAppBarBG,
       systemOverlayStyle: SystemUiOverlayStyle.light,
     ),
+    //FloatingActionButton Theme
         floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: AppColorTheme.darkFloatBG,
       foregroundColor: AppColorTheme.darkForeignC,
@@ -87,13 +114,26 @@ class ThemeCubit extends Cubit<ThemeData> {
         borderRadius: BorderRadius.circular(50)
       ),
     ),
+    //Card Theme
     cardTheme: CardTheme(
-      color: Colors.grey[900],
+      color: AppColorTheme.darkCardTheme,
     ),
         elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        //backgroundColor: Colors.blueGrey[900]
-        backgroundColor: Color(0xFF41292C)
+        backgroundColor: AppColorTheme.darkElevatedBG
+      )
+    ),
+    //Dialog Theme
+    dialogTheme: const DialogTheme(
+      backgroundColor: AppColorTheme.darkDialogBG,
+      titleTextStyle: TextStyle(
+        color: AppColorTheme.dartkDialogTitle,
+        fontWeight: FontWeight.bold,
+        fontSize: 20
+      ),
+      contentTextStyle: TextStyle(
+        color: AppColorTheme.darkDialogContent,
+        fontWeight: FontWeight.bold
       )
     ),
   );

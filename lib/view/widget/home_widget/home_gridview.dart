@@ -107,26 +107,46 @@ class _HomeGridViewWidget extends StatelessWidget with NavigateManager {
                     Text(
                       '${food.yemek_fiyat} ₺',
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          color: Color(0xFFe85d04),
+                          color: const Color(0xFFe85d04),
                           fontWeight: FontWeight.bold),
                     ),
-                  IconButton(
-                        onPressed: () {
-                          context.read<HomeCubit>().foodCubitAdd(food.yemek_adi ?? '', food.yemek_resim_adi ?? '', int.parse(food.yemek_fiyat!), 1,"berk");
-                          print("Ürün Eklendi: ${food.yemek_adi}");
-                        },
-                        icon: Icon(
-                          Icons.shopping_bag_outlined,
-                          color: Colors.white,
-                        ),
-                        style:
-                            IconButton.styleFrom(backgroundColor: Colors.black),
+                    IconButton(
+                      onPressed: () {
+                        context.read<HomeCubit>().foodCubitAdd(
+                            food.yemek_adi ?? '',
+                            food.yemek_resim_adi ?? '',
+                            int.parse(food.yemek_fiyat!),
+                            1,
+                            "berk");
+                        _AddFoodAlert(context, food);
+                      },
+                      icon: const Icon(
+                        Icons.shopping_bag_outlined,
+                        color: Colors.white,
                       ),
+                      style:
+                          IconButton.styleFrom(backgroundColor: Colors.black),
+                    ),
                   ],
                 )
               ],
             ),
           ),
+        );
+      },
+    );
+  }
+
+  Future<dynamic> _AddFoodAlert(BuildContext context, FoodModel food) {
+    return showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [Text('${food.yemek_adi}'), const Divider()],
+          ),
+          content: const Text('Sepete Eklenmiştir'),
         );
       },
     );
