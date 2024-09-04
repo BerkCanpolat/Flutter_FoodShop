@@ -30,5 +30,6 @@
     "changeLanguageTuskishSub" : "Switch To Turkish",
     "darkLightTheme" : "Dark/Light Theme",
     "darkLightThemeSub" : "Change Now",
-    "profileButton" : "Edit Profile"
+    "profileButton" : "Edit Profile",
+    "detailsPageAppBar" : "Details Page"
 }

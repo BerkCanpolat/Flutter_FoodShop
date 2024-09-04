@@ -30,5 +30,6 @@
     "changeLanguageTuskishSub" : "Türkçeye Geç",
     "darkLightTheme" : "Karanlık/Aydınlık Tema",
     "darkLightThemeSub" : "Şimdi Değiştir",
-    "profileButton" : "Profili Düzenle"
+    "profileButton" : "Profili Düzenle",
+    "detailsPageAppBar" : "Detay Sayfam"
 }

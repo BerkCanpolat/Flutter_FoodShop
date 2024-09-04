@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_foodshop/products/extension/localize_extension.dart';
 import 'package:flutter_foodshop/view/cubit/details_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/food_badge_cubit.dart';
 import 'package:flutter_foodshop/view/screens/food_add_details_page.dart';
@@ -13,7 +14,7 @@ class DetailsAppBar extends StatelessWidget implements PreferredSizeWidget{
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text('Details'),
+      title: Text(context.detailsPageAppBar),
       actions: [
         Stack(
           children: [

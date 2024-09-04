@@ -48,6 +48,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "descriptionDetailsSubTitle": MessageLookupByLibrary.simpleMessage(
             "Our food is extremely delicious. Delivery is free of charge! We strongly recommend you to taste this unique dish. The products used are extremely clean and hygienic. Order plenty for plenty of food!"),
         "detailsButton": MessageLookupByLibrary.simpleMessage("Get It now"),
+        "detailsPageAppBar":
+            MessageLookupByLibrary.simpleMessage("Details Page"),
         "detailsPrice": MessageLookupByLibrary.simpleMessage("8.45"),
         "detailsPriceText": MessageLookupByLibrary.simpleMessage("Price"),
         "detailsReviews": MessageLookupByLibrary.simpleMessage("Reviews"),

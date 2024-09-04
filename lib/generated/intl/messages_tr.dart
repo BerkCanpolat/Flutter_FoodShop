@@ -47,6 +47,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "descriptionDetailsSubTitle": MessageLookupByLibrary.simpleMessage(
             "Yemeklerimiz son derece lezzetlidir. Teslimat ücretsizdir! Bu eşsiz yemeği tatmanızı şiddetle tavsiye ederiz. Kullanılan ürünler son derece temiz ve hijyeniktir. Bol yemek için bol sipariş verin!"),
         "detailsButton": MessageLookupByLibrary.simpleMessage("Şimdi Al"),
+        "detailsPageAppBar":
+            MessageLookupByLibrary.simpleMessage("Detay Sayfam"),
         "detailsPrice": MessageLookupByLibrary.simpleMessage("8.45"),
         "detailsPriceText": MessageLookupByLibrary.simpleMessage("Fiyat"),
         "detailsReviews": MessageLookupByLibrary.simpleMessage("İnceleme"),

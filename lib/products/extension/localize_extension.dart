@@ -24,6 +24,7 @@ extension LocalEx on BuildContext {
   String get detailsPriceTwo => S.of(this).detailsPriceText;
   String get detailsRew => S.of(this).detailsReviews;
   String get detailsButtonText => S.of(this).detailsButton;
+  String get detailsPageAppBar => S.of(this).detailsPageAppBar;
 
   //Basket Page
   String get basketEmptyImage => S.of(this).basketEmpyImage;

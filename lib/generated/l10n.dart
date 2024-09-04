@@ -369,6 +369,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Details Page`
+  String get detailsPageAppBar {
+    return Intl.message(
+      'Details Page',
+      name: 'detailsPageAppBar',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
