@@ -118,6 +118,7 @@ class _HomeGridViewWidget extends StatelessWidget with NavigateManager {
                             int.parse(food.yemek_fiyat!),
                             1,
                             "berk");
+                            context.read<FoodBadgeCubit>().addBadgeItems();
                         _AddFoodAlert(context, food);
                       },
                       icon: const Icon(

@@ -20,7 +20,7 @@ class DetailsButton extends StatelessWidget {
             color: Colors.white
           ),
           ),
-        icon: Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 20,),
+        icon: const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 20,),
         ),
     );
   }

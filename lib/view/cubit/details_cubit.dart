@@ -32,5 +32,10 @@ class DetailsCubit extends Cubit<int> {
     return totalPrice;
   }
 
+  void resetQuantity() {
+    quantity = 0;
+    emit(quantity);
+  }
+
 
 }

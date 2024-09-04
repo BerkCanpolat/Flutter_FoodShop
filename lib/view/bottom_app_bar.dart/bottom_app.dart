@@ -9,7 +9,7 @@ class BottomApp extends StatefulWidget {
 
 class _BottomAppState extends State<BottomApp> {
 
-  var changePage = [Home(), FavoritePage(), Gecicilocal(), Container()];
+  var changePage = [Home(), FavoritePage(), EmptyPage(), ProfilePage()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +20,7 @@ class _BottomAppState extends State<BottomApp> {
         },
         ),
       bottomNavigationBar: const _MainBottomNav(),
-      floatingActionButton: FloatingActionButton(onPressed: (){}, child: Icon(Icons.add),),
+      floatingActionButton: FloatingActionButton(onPressed: (){}, child: const Icon(Icons.add),),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }

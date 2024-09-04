@@ -42,7 +42,7 @@ class RepositoryFood {
   Future<void> foodSave(String yemek_adi, String yemek_resim_adi,
       int yemek_fiyat, int yemek_siparis_adet, String kullanici_adi) async {
     try {
-      final url = "http://kasimadalan.pe.hu/yemekler/sepeteYemekEkle.php";
+      final url = "${_FoodServicePath.sepeteYemekEkle.name}.php";
       var veri = {
         "yemek_adi": yemek_adi,
         "yemek_resim_adi": yemek_resim_adi,
@@ -50,7 +50,7 @@ class RepositoryFood {
         "yemek_siparis_adet": yemek_siparis_adet,
         "kullanici_adi": kullanici_adi,
       };
-      var cevap = await _dio.post(url, data: FormData.fromMap(veri));
+      await _dio.post(url, data: FormData.fromMap(veri));
     } on DioException catch (e) {
       _ShowDebug.showDioError(e);
     }
@@ -60,7 +60,7 @@ class RepositoryFood {
     Future<List<FoodAddModel>?> foodGetApi(String kullanici_adi) async {
       try {
         final url =
-            "http://kasimadalan.pe.hu/yemekler/sepettekiYemekleriGetir.php";
+            "${_FoodServicePath.sepettekiYemekleriGetir.name}.php";
             var data = {"kullanici_adi": kullanici_adi };
         var response = await _dio.post(url,data: FormData.fromMap(data));
         if(response.data != null && response.data.toString().isNotEmpty) {
@@ -74,21 +74,16 @@ class RepositoryFood {
       }
     }
 
+    //Delete Food
     Future<void> deleteFoodApi(String kullanici_adi, int sepet_yemek_id) async{
       try {
-        var url = "http://kasimadalan.pe.hu/yemekler/sepettenYemekSil.php";
+        var url = "${_FoodServicePath.sepettenYemekSil.name}.php";
       var veri = {"kullanici_adi":kullanici_adi,"sepet_yemek_id":sepet_yemek_id};
-        var cevap = await _dio.post(url, data: FormData.fromMap(veri));
+        await _dio.post(url, data: FormData.fromMap(veri));
       }on DioException catch (e) {
         _ShowDebug.showDioError(e);
       }
     }
-
-      /* Future<void> clearCartApi(List<FoodAddModel> foodList, String kullanici_adi) async {
-    for (var food in foodList) {
-      await deleteFoodApi(kullanici_adi, food.sepet_yemek_id);
-    }
-  } */
   
 }
 
@@ -102,4 +97,7 @@ class _ShowDebug {
 
 enum _FoodServicePath {
   tumYemekleriGetir,
+  sepeteYemekEkle,
+  sepettekiYemekleriGetir,
+  sepettenYemekSil,
 }

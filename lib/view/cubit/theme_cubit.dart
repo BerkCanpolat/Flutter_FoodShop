@@ -36,6 +36,7 @@ class ThemeCubit extends Cubit<ThemeData> {
       elevation: 0.0,
       backgroundColor: AppColorTheme.lightAppBarBG,
       systemOverlayStyle: SystemUiOverlayStyle.dark,
+      centerTitle: false
     ),
     //FloatingActionButton Theme
     floatingActionButtonTheme: FloatingActionButtonThemeData(
@@ -68,6 +69,18 @@ class ThemeCubit extends Cubit<ThemeData> {
         fontWeight: FontWeight.bold
       )
     ),
+    //ListTile THeme
+    listTileTheme: ListTileThemeData(
+      iconColor: Colors.orange,
+      subtitleTextStyle: TextStyle(
+        color: Colors.grey,
+        fontWeight: FontWeight.bold
+      ),
+      titleTextStyle: TextStyle(
+        fontWeight: FontWeight.bold,
+        color: Colors.black
+      )
+    ),
   );
 
 
@@ -84,7 +97,7 @@ class ThemeCubit extends Cubit<ThemeData> {
       titleLarge: TextStyle(color: AppColorTheme.darkTitleLarge),
       titleMedium: TextStyle(color: AppColorTheme.darkTitleMedium),
       bodyLarge: TextStyle(color: AppColorTheme.darkTitleBodyLarge),
-      bodySmall: TextStyle(color: AppColorTheme.darkTitleBodySmall)
+      bodySmall: TextStyle(color: AppColorTheme.darkTitleBodySmall),
     ),
     scaffoldBackgroundColor: AppColorTheme.darkScaffoldBG,
     //Bottom Navigation Bar Theme
@@ -105,6 +118,7 @@ class ThemeCubit extends Cubit<ThemeData> {
       elevation: 0.0,
       backgroundColor: AppColorTheme.darkAppBarBG,
       systemOverlayStyle: SystemUiOverlayStyle.light,
+      centerTitle: false
     ),
     //FloatingActionButton Theme
         floatingActionButtonTheme: FloatingActionButtonThemeData(
@@ -134,6 +148,18 @@ class ThemeCubit extends Cubit<ThemeData> {
       contentTextStyle: TextStyle(
         color: AppColorTheme.darkDialogContent,
         fontWeight: FontWeight.bold
+      )
+    ),
+    //ListTile THeme
+    listTileTheme: ListTileThemeData(
+      iconColor: Colors.deepOrangeAccent,
+      subtitleTextStyle: TextStyle(
+        color: Colors.grey,
+        fontWeight: FontWeight.bold
+      ),
+      titleTextStyle: TextStyle(
+        fontWeight: FontWeight.bold,
+        color: Colors.white
       )
     ),
   );

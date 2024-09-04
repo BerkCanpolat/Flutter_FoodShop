@@ -5,6 +5,7 @@ import 'package:flutter_foodshop/view/cubit/add_card_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/bottom_navigationbar_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/details_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/favourite_cubit.dart';
+import 'package:flutter_foodshop/view/cubit/food_badge_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/home_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/localizations_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/slidercard_cubit.dart';
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => HomeCubit()),
         BlocProvider(create: (context) => FavoriteCubit()),
         BlocProvider(create: (context) => AddCardCubit()),
-        BlocProvider(create: (context) => DetailsCubit())
+        BlocProvider(create: (context) => DetailsCubit()),
+        BlocProvider(create: (context) => FoodBadgeCubit())
     ],
     child: const ThemeSwitcher()
     );

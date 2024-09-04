@@ -15,18 +15,22 @@ class ThemeSwitcher extends StatelessWidget {
       builder: (context, theme) {
         return BlocBuilder<LocalizationsCubit, Locale>(
           builder: (context, state) {
-            return MaterialApp(
-            theme: theme,
-            home: BottomApp(),
-            localizationsDelegates:const [
-              S.delegate,
-              GlobalCupertinoLocalizations.delegate,
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate
-            ],
-            supportedLocales: S.delegate.supportedLocales,
-            locale: state,
-          );
+            return AnimatedSwitcher(
+              duration: const Duration(milliseconds: 600),
+              child: MaterialApp(
+                key: ValueKey<ThemeData>(theme),
+              theme: theme,
+              home: BottomApp(),
+              localizationsDelegates:const [
+                S.delegate,
+                GlobalCupertinoLocalizations.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate
+              ],
+              supportedLocales: S.delegate.supportedLocales,
+              locale: state,
+                ),
+            );
           } 
             
         );
