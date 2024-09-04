@@ -25,6 +25,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "allFoodsCategoryText":
             MessageLookupByLibrary.simpleMessage("All Meals"),
         "appbarWelcome": MessageLookupByLibrary.simpleMessage("Welcome"),
+        "basketAddFoodPrice": MessageLookupByLibrary.simpleMessage("Price: "),
+        "basketAddFoodQuantitiy":
+            MessageLookupByLibrary.simpleMessage("Quantity: "),
+        "basketAddFoodTotal": MessageLookupByLibrary.simpleMessage("Total: "),
+        "basketEmpyImage": MessageLookupByLibrary.simpleMessage(
+            "You haven\'t added food to your baset yet"),
+        "baskettAppbar": MessageLookupByLibrary.simpleMessage("Food Basket"),
+        "changeLanguageEnglish":
+            MessageLookupByLibrary.simpleMessage("English"),
+        "changeLanguageEnglishSub":
+            MessageLookupByLibrary.simpleMessage("Switch To English"),
+        "changeLanguageTurkish":
+            MessageLookupByLibrary.simpleMessage("Turkish"),
+        "changeLanguageTuskishSub":
+            MessageLookupByLibrary.simpleMessage("Switch To Turkish"),
+        "darkLightTheme":
+            MessageLookupByLibrary.simpleMessage("Dark/Light Theme"),
+        "darkLightThemeSub": MessageLookupByLibrary.simpleMessage("Change Now"),
         "descriptionDetails":
             MessageLookupByLibrary.simpleMessage("Descripption"),
         "descriptionDetailsSubTitle": MessageLookupByLibrary.simpleMessage(
@@ -33,8 +51,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "detailsPrice": MessageLookupByLibrary.simpleMessage("8.45"),
         "detailsPriceText": MessageLookupByLibrary.simpleMessage("Price"),
         "detailsReviews": MessageLookupByLibrary.simpleMessage("Reviews"),
+        "favoriteAppBar":
+            MessageLookupByLibrary.simpleMessage("Favourite Page"),
+        "favoriteEmptyImage": MessageLookupByLibrary.simpleMessage(
+            "You don\'t have a favourite dish yet"),
+        "foodAddedDialog":
+            MessageLookupByLibrary.simpleMessage("Added To Basket"),
         "homeFoodsFreeShipping":
             MessageLookupByLibrary.simpleMessage("Free Shipping"),
+        "profileButton": MessageLookupByLibrary.simpleMessage("Edit Profile"),
+        "profileOrderHistory":
+            MessageLookupByLibrary.simpleMessage("Order History"),
+        "profileOrderHistorySub":
+            MessageLookupByLibrary.simpleMessage("Orders Information"),
         "sliderCardButtonName": MessageLookupByLibrary.simpleMessage("Buy Now"),
         "sliderCardProductPriceFive":
             MessageLookupByLibrary.simpleMessage("\$6.99"),

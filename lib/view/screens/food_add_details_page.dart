@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_foodshop/data/entity/food_add_model.dart';
 import 'package:flutter_foodshop/products/details_page_state/details_state.dart';
+import 'package:flutter_foodshop/products/extension/localize_extension.dart';
 import 'package:flutter_foodshop/view/cubit/add_card_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/food_badge_cubit.dart';
 import 'package:flutter_foodshop/view/widget/details_widget/details_button.dart';
@@ -18,7 +19,7 @@ class _FoodAddDetailsPageState extends DetailsState {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Yemek Sepetim'),
+        title: Text(context.basketAppBar),
         centerTitle: false,
       ),
       body: BlocBuilder<AddCardCubit, List<FoodAddModel>>(
@@ -29,7 +30,7 @@ class _FoodAddDetailsPageState extends DetailsState {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Henüz Sepete Yemek Eklemedin!',
+                  context.basketEmptyImage,
                   style: Theme.of(context)
                       .textTheme
                       .headlineLarge
@@ -80,7 +81,7 @@ class _FoodAddDetailsPageState extends DetailsState {
                                         ?.copyWith(fontWeight: FontWeight.bold),
                                   ),
                                   Text(
-                                    "Fiyat: ${food.yemek_fiyat * food.yemek_siparis_adet} ₺",
+                                    "${context.basketAddFoodPrice} ${food.yemek_fiyat * food.yemek_siparis_adet} ₺",
                                     style: Theme.of(context)
                                         .textTheme
                                         .bodySmall
@@ -90,7 +91,7 @@ class _FoodAddDetailsPageState extends DetailsState {
                                     height: 10,
                                   ),
                                   Text(
-                                    "Adet: ${food.yemek_siparis_adet}",
+                                    "${context.basketAddFoodQuantitiy} ${food.yemek_siparis_adet}",
                                     style: Theme.of(context)
                                         .textTheme
                                         .bodyLarge
@@ -123,7 +124,7 @@ class _FoodAddDetailsPageState extends DetailsState {
                     child: Row(
                       children: [
                         Text(
-                          'Toplam :',
+                          context.basketAddFoodTotal,
                           style: Theme.of(context)
                               .textTheme
                               .labelLarge

@@ -28,7 +28,7 @@ class AppBarCirclePadding extends StatelessWidget {
               ),
               children: <TextSpan>[
                 TextSpan(text: '$_name', style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.bold,
                   color: Colors.grey
                 ))
               ]

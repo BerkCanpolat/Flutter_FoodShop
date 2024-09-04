@@ -13,5 +13,22 @@
     "detailsPriceText" : "Fiyat",
     "detailsPrice" : "8.45",
     "detailsReviews" : "İnceleme",
-    "detailsButton" : "Şimdi Al"
+    "detailsButton" : "Şimdi Al",
+    "basketEmpyImage" : "Henüz Sepete Yemek Eklemedin!",
+    "favoriteEmptyImage" : "Henüz Favori Yemeğin Yok!",
+    "baskettAppbar" : "Yemek Sepetim",
+    "favoriteAppBar" : "Favori Sayfam",
+    "foodAddedDialog" : "Sepete Eklendi",
+    "basketAddFoodQuantitiy" : "Adet: ",
+    "basketAddFoodPrice" : "Fiyat: ",
+    "basketAddFoodTotal" : "Toplam: ",
+    "profileOrderHistory" : "Sipariş Geçmişi",
+    "profileOrderHistorySub" : "Sipariş Bilgileri",
+    "changeLanguageEnglish" : "İngilizce",
+    "changeLanguageEnglishSub" : "İngilizceye Geç",
+    "changeLanguageTurkish" : "Türkçe",
+    "changeLanguageTuskishSub" : "Türkçeye Geç",
+    "darkLightTheme" : "Karanlık/Aydınlık Tema",
+    "darkLightThemeSub" : "Şimdi Değiştir",
+    "profileButton" : "Profili Düzenle"
 }

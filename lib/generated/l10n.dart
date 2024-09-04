@@ -199,6 +199,176 @@ class S {
       args: [],
     );
   }
+
+  /// `You haven't added food to your baset yet`
+  String get basketEmpyImage {
+    return Intl.message(
+      'You haven\'t added food to your baset yet',
+      name: 'basketEmpyImage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You don't have a favourite dish yet`
+  String get favoriteEmptyImage {
+    return Intl.message(
+      'You don\'t have a favourite dish yet',
+      name: 'favoriteEmptyImage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Food Basket`
+  String get baskettAppbar {
+    return Intl.message(
+      'Food Basket',
+      name: 'baskettAppbar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favourite Page`
+  String get favoriteAppBar {
+    return Intl.message(
+      'Favourite Page',
+      name: 'favoriteAppBar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Added To Basket`
+  String get foodAddedDialog {
+    return Intl.message(
+      'Added To Basket',
+      name: 'foodAddedDialog',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quantity: `
+  String get basketAddFoodQuantitiy {
+    return Intl.message(
+      'Quantity: ',
+      name: 'basketAddFoodQuantitiy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Price: `
+  String get basketAddFoodPrice {
+    return Intl.message(
+      'Price: ',
+      name: 'basketAddFoodPrice',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total: `
+  String get basketAddFoodTotal {
+    return Intl.message(
+      'Total: ',
+      name: 'basketAddFoodTotal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order History`
+  String get profileOrderHistory {
+    return Intl.message(
+      'Order History',
+      name: 'profileOrderHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Orders Information`
+  String get profileOrderHistorySub {
+    return Intl.message(
+      'Orders Information',
+      name: 'profileOrderHistorySub',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `English`
+  String get changeLanguageEnglish {
+    return Intl.message(
+      'English',
+      name: 'changeLanguageEnglish',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Switch To English`
+  String get changeLanguageEnglishSub {
+    return Intl.message(
+      'Switch To English',
+      name: 'changeLanguageEnglishSub',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Turkish`
+  String get changeLanguageTurkish {
+    return Intl.message(
+      'Turkish',
+      name: 'changeLanguageTurkish',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Switch To Turkish`
+  String get changeLanguageTuskishSub {
+    return Intl.message(
+      'Switch To Turkish',
+      name: 'changeLanguageTuskishSub',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dark/Light Theme`
+  String get darkLightTheme {
+    return Intl.message(
+      'Dark/Light Theme',
+      name: 'darkLightTheme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Now`
+  String get darkLightThemeSub {
+    return Intl.message(
+      'Change Now',
+      name: 'darkLightThemeSub',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit Profile`
+  String get profileButton {
+    return Intl.message(
+      'Edit Profile',
+      name: 'profileButton',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

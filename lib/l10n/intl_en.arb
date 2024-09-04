@@ -13,5 +13,22 @@
     "detailsPriceText" : "Price",
     "detailsPrice" : "8.45",
     "detailsReviews" : "Reviews",
-    "detailsButton" : "Get It now"
+    "detailsButton" : "Get It now",
+    "basketEmpyImage" : "You haven't added food to your baset yet",
+    "favoriteEmptyImage" : "You don't have a favourite dish yet",
+    "baskettAppbar" : "Food Basket",
+    "favoriteAppBar" : "Favourite Page",
+    "foodAddedDialog" : "Added To Basket",
+    "basketAddFoodQuantitiy" : "Quantity: ",
+    "basketAddFoodPrice" : "Price: ",
+    "basketAddFoodTotal" : "Total: ",
+    "profileOrderHistory" : "Order History",
+    "profileOrderHistorySub" : "Orders Information",
+    "changeLanguageEnglish" : "English",
+    "changeLanguageEnglishSub" : "Switch To English",
+    "changeLanguageTurkish" : "Turkish",
+    "changeLanguageTuskishSub" : "Switch To Turkish",
+    "darkLightTheme" : "Dark/Light Theme",
+    "darkLightThemeSub" : "Change Now",
+    "profileButton" : "Edit Profile"
 }

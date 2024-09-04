@@ -147,7 +147,7 @@ class _HomeGridViewWidget extends StatelessWidget with NavigateManager {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [Text('${food.yemek_adi}'), const Divider()],
           ),
-          content: const Text('Sepete Eklenmiştir'),
+          content: Text(context.dialogText),
         );
       },
     );

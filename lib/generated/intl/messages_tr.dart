@@ -25,6 +25,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "allFoodsCategoryText":
             MessageLookupByLibrary.simpleMessage("Tüm Yemekler"),
         "appbarWelcome": MessageLookupByLibrary.simpleMessage("Hoşgeldin"),
+        "basketAddFoodPrice": MessageLookupByLibrary.simpleMessage("Fiyat: "),
+        "basketAddFoodQuantitiy":
+            MessageLookupByLibrary.simpleMessage("Adet: "),
+        "basketAddFoodTotal": MessageLookupByLibrary.simpleMessage("Toplam: "),
+        "basketEmpyImage": MessageLookupByLibrary.simpleMessage(
+            "Henüz Sepete Yemek Eklemedin!"),
+        "baskettAppbar": MessageLookupByLibrary.simpleMessage("Yemek Sepetim"),
+        "changeLanguageEnglish":
+            MessageLookupByLibrary.simpleMessage("İngilizce"),
+        "changeLanguageEnglishSub":
+            MessageLookupByLibrary.simpleMessage("İngilizceye Geç"),
+        "changeLanguageTurkish": MessageLookupByLibrary.simpleMessage("Türkçe"),
+        "changeLanguageTuskishSub":
+            MessageLookupByLibrary.simpleMessage("Türkçeye Geç"),
+        "darkLightTheme":
+            MessageLookupByLibrary.simpleMessage("Karanlık/Aydınlık Tema"),
+        "darkLightThemeSub":
+            MessageLookupByLibrary.simpleMessage("Şimdi Değiştir"),
         "descriptionDetails": MessageLookupByLibrary.simpleMessage("Açıklama"),
         "descriptionDetailsSubTitle": MessageLookupByLibrary.simpleMessage(
             "Yemeklerimiz son derece lezzetlidir. Teslimat ücretsizdir! Bu eşsiz yemeği tatmanızı şiddetle tavsiye ederiz. Kullanılan ürünler son derece temiz ve hijyeniktir. Bol yemek için bol sipariş verin!"),
@@ -32,8 +50,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "detailsPrice": MessageLookupByLibrary.simpleMessage("8.45"),
         "detailsPriceText": MessageLookupByLibrary.simpleMessage("Fiyat"),
         "detailsReviews": MessageLookupByLibrary.simpleMessage("İnceleme"),
+        "favoriteAppBar": MessageLookupByLibrary.simpleMessage("Favori Sayfam"),
+        "favoriteEmptyImage":
+            MessageLookupByLibrary.simpleMessage("Henüz Favori Yemeğin Yok!"),
+        "foodAddedDialog":
+            MessageLookupByLibrary.simpleMessage("Sepete Eklendi"),
         "homeFoodsFreeShipping":
             MessageLookupByLibrary.simpleMessage("Ücretsiz Gönderim"),
+        "profileButton":
+            MessageLookupByLibrary.simpleMessage("Profili Düzenle"),
+        "profileOrderHistory":
+            MessageLookupByLibrary.simpleMessage("Sipariş Geçmişi"),
+        "profileOrderHistorySub":
+            MessageLookupByLibrary.simpleMessage("Sipariş Bilgileri"),
         "sliderCardButtonName":
             MessageLookupByLibrary.simpleMessage("Satın Al"),
         "sliderCardProductPriceFive":

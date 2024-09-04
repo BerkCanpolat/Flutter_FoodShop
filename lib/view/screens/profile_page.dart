@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_foodshop/products/extension/localize_extension.dart';
 import 'package:flutter_foodshop/view/cubit/localizations_cubit.dart';
 import 'package:flutter_foodshop/view/cubit/theme_cubit.dart';
 
@@ -17,9 +18,9 @@ class ProfilePage extends StatelessWidget {
             const _ProfileNameText(),
             const _ProfileMailText(),
             const _ProfileButton(),
-            const _ProfileListTile(
-              title: 'Order History',
-              subTitle: 'Orders Information',
+            _ProfileListTile(
+              title: context.profileOrderHistory,
+              subTitle: context.profileOrderHistorySub,
               iconDataOne: Icons.history_toggle_off_outlined,
               iconDataTwo: Icons.arrow_forward_ios_rounded,
             ),
@@ -28,10 +29,10 @@ class ProfilePage extends StatelessWidget {
               onTap: () {
                 context.read<LocalizationsCubit>().changeLanguage('en');
               },
-              child: const _ProfileListTile(
-                title: 'İngilizce',
-                subTitle: 'Pay your bill',
-                iconDataOne: Icons.payment_outlined,
+              child: _ProfileListTile(
+                title: context.changeLanguageEnglish,
+                subTitle: context.changeLanguageEnglishSub,
+                iconDataOne: Icons.language_outlined,
                 iconDataTwo: Icons.arrow_forward_ios_rounded,
               ),
             ),
@@ -40,10 +41,10 @@ class ProfilePage extends StatelessWidget {
               onTap: () {
                 context.read<LocalizationsCubit>().changeLanguage('tr');
               },
-              child: const _ProfileListTile(
-                title: 'Türkçe',
-                subTitle: 'Your delivery location',
-                iconDataOne: Icons.location_on_outlined,
+              child:  _ProfileListTile(
+                title: context.changeLanguageTurkish,
+                subTitle: context.changeLanguageTuskishSub,
+                iconDataOne: Icons.language,
                 iconDataTwo: Icons.arrow_forward_ios_rounded,
               ),
             ),
@@ -52,9 +53,9 @@ class ProfilePage extends StatelessWidget {
               onTap: () {
                  context.read<ThemeCubit>().toggleTheme();
               },
-              child: const _ProfileListTile(
-                title: 'Dark/Light Theme',
-                subTitle: 'Change Now',
+              child:  _ProfileListTile(
+                title: context.darkLightTheme,
+                subTitle: context.darkLightThemeSub,
                 iconDataOne: Icons.brightness_2_outlined,
                 iconDataTwo: Icons.arrow_forward_ios_rounded,
               ),
@@ -80,7 +81,7 @@ class _ProfileButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: (){}, 
         child: Text(
-          'Edit Profile', style: Theme.of(context).textTheme.labelLarge?.copyWith(
+          context.profileButton, style: Theme.of(context).textTheme.labelLarge?.copyWith(
             color: Colors.white
           ),
         ),

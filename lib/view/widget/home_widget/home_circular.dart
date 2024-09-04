@@ -6,6 +6,6 @@ class _HomeCircularWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: CircularProgressIndicator(color: Colors.orange,),);
+    return const Center(child: CircularProgressIndicator(color: Colors.orange,),);
   }
 }

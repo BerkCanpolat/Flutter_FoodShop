@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_foodshop/data/entity/food_model.dart';
+import 'package:flutter_foodshop/products/extension/localize_extension.dart';
 import 'package:flutter_foodshop/view/cubit/favourite_cubit.dart';
 import 'package:flutter_foodshop/view/screens/details_page.dart';
 
@@ -11,7 +12,7 @@ class FavoritePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Favori Sayfam'),
+        title: Text(context.favoriteAppBar),
         centerTitle: false,
       ),
       body: BlocBuilder<FavoriteCubit, List<FoodModel>>(
@@ -43,7 +44,7 @@ class _IsEmptyBlock extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          'Henüz Favori Yemeğin yok!', style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+          context.favoriteEmptyImage, style: Theme.of(context).textTheme.headlineLarge?.copyWith(
             fontWeight: FontWeight.bold
           ),
           ),
