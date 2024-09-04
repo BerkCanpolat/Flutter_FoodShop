@@ -29,6 +29,7 @@ class ThemeSwitcher extends StatelessWidget {
               ],
               supportedLocales: S.delegate.supportedLocales,
               locale: state,
+              debugShowCheckedModeBanner: false,
                 ),
             );
           } 
