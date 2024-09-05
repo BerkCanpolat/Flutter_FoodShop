@@ -15,6 +15,8 @@ Theme Support: The app supports both light and dark themes. Users can switch bet
 Language Support: The app is available in both Turkish and English, allowing users to switch languages as desired.
 
 Technologies Used
+
+
 Flutter: Used to develop the entire user interface and functionality of the app.
 
 
