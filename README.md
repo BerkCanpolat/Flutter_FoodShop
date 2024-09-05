@@ -19,3 +19,14 @@ Flutter: Used to develop the entire user interface and functionality of the app.
 Bloc (Cubit): Used for state management and controlling data flow.
 Dio: Used to make HTTP requests and fetch data from an API.
 SharedPreferences: Used to persist favorite meals, theme, and language preferences across sessions.
+
+
+
+Screenshots
+
+
+<img width="506" alt="homeLight" src="https://github.com/user-attachments/assets/f2416e1a-d546-402e-b366-3a27b7193d19">
+
+
+
+
