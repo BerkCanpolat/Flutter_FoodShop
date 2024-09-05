@@ -1,16 +1,21 @@
-# flutter_foodshop
+FoodShop - Flutter Application
+FoodShop is a mobile application developed using Flutter, where users can explore meals, add them to their cart, mark them as favorites, and enjoy various modern features. This project allows users to easily manage their food orders while offering a rich user experience through features like dark/light themes and multi-language support.
 
-A new Flutter project.
+Features
+Meal Listing: The homepage lists a variety of meals, allowing users to browse and view detailed information about each one.
 
-## Getting Started
+Cart Management: Selected meals can be added to the cart, and the cart page shows the quantity of each item and the total price. When the same item is added multiple times, the quantity and total price are automatically updated.
 
-This project is a starting point for a Flutter application.
+Remove Items from Cart: Users can remove individual items from the cart or clear the entire cart.
 
-A few resources to get you started if this is your first Flutter project:
+Favorites: Users can mark meals as favorites and quickly access them on the Favorites page.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Theme Support: The app supports both light and dark themes. Users can switch between themes based on their preference.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Language Support: The app is available in both Turkish and English, allowing users to switch languages as desired.
+
+Technologies Used
+Flutter: Used to develop the entire user interface and functionality of the app.
+Bloc (Cubit): Used for state management and controlling data flow.
+Dio: Used to make HTTP requests and fetch data from an API.
+SharedPreferences: Used to persist favorite meals, theme, and language preferences across sessions.
