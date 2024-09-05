@@ -27,6 +27,16 @@ Screenshots
 
 <img width="506" alt="homeLight" src="https://github.com/user-attachments/assets/f2416e1a-d546-402e-b366-3a27b7193d19">
 
+<img width="506" alt="detailsLight" src="https://github.com/user-attachments/assets/bd8294b3-b225-4923-b9aa-5f29406b487f">
+
+<img width="506" alt="basketsLigh" src="https://github.com/user-attachments/assets/1968c0e1-3f0d-45ab-a0bd-ecb2ebeab1e2">
+
+<img width="506" alt="profileLigh" src="https://github.com/user-attachments/assets/155598b3-bdb3-4931-9e05-4c90fe960016">
+
+<img width="506" alt="darkProfile" src="https://github.com/user-attachments/assets/d1c2c444-8741-47f7-ae14-d43a9259f24a">
+
+<img width="506" alt="darkHomeTR" src="https://github.com/user-attachments/assets/88b00b76-b9ee-438d-8f5e-1e05fa1a3c16">
+
 
 
 
