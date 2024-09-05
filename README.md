@@ -19,6 +19,14 @@ Flutter: Used to develop the entire user interface and functionality of the app.
 Bloc (Cubit): Used for state management and controlling data flow.
 Dio: Used to make HTTP requests and fetch data from an API.
 SharedPreferences: Used to persist favorite meals, theme, and language preferences across sessions.
+flutter_localizations: This package is used to support localization in the app, enabling multiple languages and formatting based on locale. It provides the necessary localization framework for making the app available in Turkish and English, as well as any additional languages.
+
+
+
+
+
+
+
 
 
 
